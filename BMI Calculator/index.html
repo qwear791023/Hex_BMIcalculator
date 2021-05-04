@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="CSSinit.css">
+  <link rel="stylesheet" href="material.css">
+  <link rel="stylesheet" href="Layout.css">
+</head>
+<body>
+  <div class="header">
+    <div class="wrap">
+      <div class="logo"><img src="img/BMICLogo.png" alt=""></div>
+      <div class="send">
+        <div class="inputBox">
+          <label for="height">身高 cm</label>
+          <input type="text" id="height" name="height" placeholder="請輸入身高">
+          <span class="checkValue" style="visibility: hidden;">*不得為空值</span>
+          <label for="weight">體重 kg</label>
+          <input type="text" id="weight" name="weight" placeholder="請輸入體重">
+          <span class="checkValue2" style="visibility: hidden;">*不得為空值</span>
+        </div>
+        <div class="btn">
+          <button class="btn-calculator">看結果</button>
+          <!-- javacontrol -->
+          <div class="result" style="display: none;">
+            <!-- <div class="BMI"><i class="BMI-number"></i><i class="BMI-text"></i><button class="BMI-bg"><span class="material-icons-outlined">autorenew</span></button></div><div class="BMI-txt"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article">
+    <h2>BMI 紀錄</h2>
+    <ul class="listBox">
+      <!-- javacontrol -->
+      <!-- <li><span class="BMI-bg"></span><div class="BMI-txt"></div><div class="BMI-num"></div><div class="weight"></div><div class="height"></div><div class="date"></div><a href="#" class="del"><span class="material-icons-outlined">delete</span></a></li> -->
+    </ul>
+    <div class="del-all" style="display: none;"><span class="material-icons-outlined">clear</span> 全部刪除</div>
+  </div>
+  <div class="footer">
+    <img src="img/BMICLogoFooter.png">
+  </div>
+  <script src="test.js"></script>
+  <!-- <script src="js/all.js"></script> -->
+</body>
+</html>
